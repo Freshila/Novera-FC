@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080b0a">
+  <meta name="description" content="Discover grassroots football talent around the world with VELORA FC.">
+  <title>VELORA FC — The World Is Watching</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home">
+      <span class="brand-mark">V</span>
+      <span>VELORA<span class="green"> FC</span><small>GLOBAL TALENT NETWORK</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+    <nav id="mainNav">
+      <a href="#home">Home</a>
+      <a href="#discover">Discover</a>
+      <a href="#mission">Our mission</a>
+      <a href="#join" class="nav-cta">Join the network ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="eyebrow"><span class="pulse"></span> THE NEXT GENERATION STARTS HERE</div>
+        <h1>THE WORLD<br>IS <span class="green">WATCHING.</span></h1>
+        <p>Talent has no borders. Opportunity shouldn't either. Discover the next generation of football talent, wherever their journey begins.</p>
+        <div class="hero-actions">
+          <a href="#discover" class="btn btn-primary">Explore talent ↗</a>
+          <a href="#join" class="btn btn-outline">Join VELORA</a>
+        </div>
+        <div class="hero-note">
+          <span>01 / GLOBAL DISCOVERY</span>
+          <span>BUILT FOR THE NEXT GENERATION</span>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="pitch-lines"></div>
+        <div class="hero-ball">⚽</div>
+        <div class="floating-card">
+          <span class="live-dot"></span> SCOUTING RADAR
+          <strong>Potential is everywhere.</strong>
+          <small>Find the player others haven't seen.</small>
+        </div>
+        <div class="vertical-label">FROM LOCAL PITCHES TO GLOBAL OPPORTUNITIES</div>
+        <div class="hero-number">V<span>FC</span></div>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Platform highlights">
+      <span>GLOBAL TALENT</span><b>✳</b>
+      <span>GRASSROOTS FOOTBALL</span><b>✳</b>
+      <span>SCOUTING WITHOUT BORDERS</span><b>✳</b>
+      <span>THE FUTURE STARTS HERE</span>
+    </section>
+
+    <section class="stats-strip">
+      <div><strong>01</strong><span>ONE GLOBAL STAGE</span></div>
+      <div><strong>ALL</strong><span>POSITIONS WELCOME</span></div>
+      <div><strong>∞</strong><span>ROOM TO BE DISCOVERED</span></div>
+      <div><strong>YOU</strong><span>COULD BE NEXT</span></div>
+    </section>
+
+    <section class="section discover-section" id="discover">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow">THE SCOUTING ROOM / 001</div>
+          <h2>DISCOVER <span class="green">TALENT.</span></h2>
+          <p>Explore sample player profiles from around the world.</p>
+        </div>
+        <span class="demo-label">DEMO PROFILES</span>
+      </div>
+
+      <div class="filter-panel">
+        <label class="search-wrap">
+          <span>⌕</span>
+          <input id="searchInput" type="search" placeholder="Search name, country or club..." autocomplete="off">
+        </label>
+        <select id="positionFilter" aria-label="Filter by position">
+          <option value="">All positions</option>
+          <option value="Forward">Forward</option>
+          <option value="Midfielder">Midfielder</option>
+          <option value="Defender">Defender</option>
+          <option value="Goalkeeper">Goalkeeper</option>
+        </select>
+        <select id="countryFilter" aria-label="Filter by country">
+          <option value="">All countries</option>
+        </select>
+        <button id="resetFilters" class="reset-btn">Reset ↺</button>
+      </div>
+
+      <div class="results-bar">
+        <span id="resultCount">Loading talent...</span>
+        <button id="shortlistToggle" class="shortlist-toggle">☆ My shortlist <span id="shortlistCount">0</span></button>
+      </div>
+
+      <div class="player-grid" id="playerGrid">
+        <p>Loading player profiles...</p>
+      </div>
+      <p class="demo-disclaimer">These are fictional demo profiles, not real players or verified scouting recommendations.</p>
+    </section>
+
+    <section class="scout-banner">
+      <div class="eyebrow">FOR SCOUTS, CLUBS & ACADEMIES</div>
+      <h2>YOUR NEXT DISCOVERY<br>COULD BE <span class="green">ANYWHERE.</span></h2>
+      <p>Imagine searching beyond the usual networks and finding players whose potential deserves a bigger stage.</p>
+      <a class="btn btn-primary" href="#join">Be part of the network ↗</a>
+    </section>
+
+    <section class="section mission-section" id="mission">
+      <div class="eyebrow">WHY VELORA EXISTS</div>
+      <h2>WHERE YOU START<br>SHOULDN'T DEFINE <span class="green">HOW FAR YOU GO.</span></h2>
+      <p>We envision a football world where geography, limited connections and lack of visibility don't decide whose talent gets noticed.</p>
+      <div class="mission-points">
+        <div><span>01</span><strong>Visibility</strong><p>Help overlooked talent present their football journey.</p></div>
+        <div><span>02</span><strong>Opportunity</strong><p>Make talent discovery easier across borders.</p></div>
+        <div><span>03</span><strong>Trust</strong><p>Build towards safer connections between players and scouts.</p></div>
+      </div>
+    </section>
+
+    <section class="join-section" id="join">
+      <div>
+        <div class="eyebrow">THE NEXT CHAPTER STARTS WITH YOU</div>
+        <h2>THE GAME IS<br><span class="green">GLOBAL.</span></h2>
+        <p>Players, coaches, scouts and football organisations — the network starts here.</p>
+      </div>
+      <div class="join-card">
+        <span class="join-icon">↗</span>
+        <h3>Be part of the beginning.</h3>
+        <p>Help shape a platform built to give grassroots football more visibility.</p>
+        <button class="btn btn-primary" id="interestButton">I'm interested</button>
+        <p class="join-feedback" id="interestFeedback" role="status"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand" href="#home"><span class="brand-mark">V</span><span>VELORA<span class="green"> FC</span><small>THE WORLD IS WATCHING</small></span></a>
+    <span>BUILT FOR THE LOVE OF THE GAME.</span>
+    <a href="#home">BACK TO TOP ↑</a>
+  </footer>
+
+  <dialog id="playerDialog" class="player-dialog">
+    <button id="closeDialog" class="dialog-close" aria-label="Close profile">✕</button>
+    <div id="playerDetails"></div>
+  </dialog>
+  <script>
+    if ("serviceWorker" in navigator) {
+      // Offline support will be added in a later stage.
+    }
+  </script>
+</body>
+</html>
